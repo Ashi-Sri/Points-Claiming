@@ -19,7 +19,8 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Ashi:ashi@cluster0.xivkrzl.mongodb.net/3W?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority
+', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
